@@ -1,128 +1,147 @@
 
-header :first-child{
-    width: auto;
-    height: auto;
-}
-header :nth-child(2){
-    width: auto;
-    height: auto;
-    float: right; 
-    /* margin-top: 5px; */
-}
-nav{
-    margin: 10px;
-    border: gray solid 2px;
-    background-color: gray;
-}
-main :first-child{
-   margin-top: 15px;
-    color: black;
-    font-size: larger;
-}
-main :nth-child(2)
-{
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
   
-    color: rgba(133, 129, 129, 0.363);
+  a {
+    text-decoration: none;
+  }
+  
+  body{
+    width: 80%;
+    margin: auto;
+  }
+  
+  header{
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  
+  /*---------------------------------------------------*/
+  .logo {
+    width: 50%;
+    display: inline-block;
+  }
+  
+  .logo h1{
+    font-family: 'Caveat', cursive; 
+    font-size:xx-large;
+    font-weight: bolder;
+    letter-spacing: -3px;
+  }
+  .logo p{
     font-size: small;
-}
-main :nth-child(3)
-{
-   
-    color: rgba(133, 129, 129, 0.363);
-    font-size: medium;
+    color:  rgb(143, 143, 143);
+    letter-spacing: -1px;
+    margin-left: 50px;
+  }
+  
+  .logo img {
+    float: left;
+    margin-right: 10px;
+    margin-top: 15px;
+  }
+  
+  .socials {
     float: right;
-}
-main :nth-child(4)
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  
+  .socials :nth-child(7){
+    padding-left:15px ;
+  }
+  
+  nav {
+    margin-bottom:30px ;
+  }
+  
+  header hr, main hr {
+  background-image:url("../img/hr-img.png");
+  background-repeat: repeat;
+  width:100% ;
+  padding: 10px;
+  border: none;
+   }
+  /*-------------------------------------------------------*/
+  main{
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .first_section1 {
     width: 50%;
-    
-}
-main p{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: inline-block;
+  }
+  
+  .first_section1 h2 {
+  font-size: 30px;
+  font-family: fantasy;
+  }
+  
+  .first_section1 p {
+  font-size: 15px;
+  color: rgb(143, 143, 143);
+  letter-spacing: -1px;
+  }
+  
+  .first_section2 {
     width: 50%;
-    text-align:justify;
-    padding: 25px;
-}
-
-  hr{
-    border: gray solid 2px;
-    background-color: gray; 
+    float: right;
   }
   
-  main :nth-child(9){
-    width: 50px;
-    height: 50px;
-    display: block;
-    margin-left: 500px;
-    padding: 25px;
-  }
-  main :nth-child(10){
-    
-    margin-left: 600px;
-    padding: 25px;
-  position: relative;
- top: -100px;
-   
-  }
-
-  main :nth-child(11){
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-   
-    position: relative;
-    top: -120px;
-    left: 290px;
-    color: white;
-    background-color: red;
-  }
-  main :nth-child(12){
-    
-    margin-left: 600px;
-    padding: 25px;
-  position: relative;
- top: -130px;
- color: gainsboro;
-   
-  }
-  footer h2 {
-      text-align: center;
-      color: gainsboro;
-      position: relative;
-    top:-130px ;
-  }
-  #logo {
-  width: 200px;
-  margin: 0 auto;
-  padding: 40px;
-    position: relative; 
+  .first_section2 div {
+    float: right;
   }
   
-  #logo img {
-    display: block;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    top:-130px ;
-    left: 80px;
-    
+  .first_section2 p {
+    display: inline;
+  }
+  /*----------------------------------------------------------------*/
+  .second_section img{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
- 
-  footer:after {
-    content: '';
-    display: block;
-    width: 85%;
-    height: 1px;
-    background: rgb(22, 20, 20);
-    margin-top: -200px;
-    position: relative;
-    left: 120px;
-
-}
+  .second_section p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-indent: 50px;
+  }
+  /*----------------------------------------------------------------------*/
+  .third_section_minu{
+  background-image: url("../img/list-bg.png") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom:50px ;
+  text-decoration-line: line-through;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+  }
+  form{
+      font-family:fantasy;
+  }
+  .third_section01 {
+  display: inline-block;
+  width :49%;
+  padding:50px ;
+  
+  }
+  
+  .third_section02 {
+    width :49%;
+    float: right;
+    padding:50px ;
+    }
+  
+    input, label{
+      margin-bottom:20px ;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    input[type=checkbox]:checked + label.strikethrough{
+      text-decoration: line-through;
+    }
+  /*-------------------------------------------------------------------*/
